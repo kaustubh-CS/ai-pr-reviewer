@@ -6,8 +6,9 @@ import {octokit} from './octokit'
 // eslint-disable-next-line camelcase
 const context = github_context
 const repo = context.repo
+const botName = 'RazorGenius'
 
-export const COMMENT_GREETING = `${getInput('bot_icon')}   CodeRabbit`
+export const COMMENT_GREETING = `${getInput('bot_icon')}   ${botName}`
 
 export const COMMENT_TAG =
   '<!-- This is an auto-generated comment by OSS CodeRabbit -->'
