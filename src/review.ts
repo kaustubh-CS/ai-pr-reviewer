@@ -22,7 +22,7 @@ import {getTokenCount} from './tokenizer'
 const context = github_context
 const repo = context.repo
 
-const ignoreKeyword = '@coderabbitai: ignore'
+const ignoreKeyword = '@razorgenius: ignore'
 
 export const codeReview = async (
   lightBot: Bot,
@@ -715,7 +715,7 @@ ${
 <summary>Tips</summary>
 
 ### Pausing incremental reviews
-- Add \`@coderabbitai: ignore\` anywhere in the PR description to pause further reviews from the bot.
+- Add \`@razorgenius: ignore\` anywhere in the PR description to pause further reviews from the bot.
 
 </details>
 `
