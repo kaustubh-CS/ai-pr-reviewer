@@ -50,6 +50,7 @@ IMPORTANT: Entire response must be in the language with ISO code: ${options.lang
           ops.headers['api-key'] = process.env.OPENAI_API_KEY
           delete ops.headers['Authorization']
           delete ops.headers['OpenAI-Organization']
+          info(`new URL: ${newUrl}`)
           return globalThis.fetch(newUrl, ops)
         }
       })
