@@ -22,7 +22,7 @@ import {getTokenCount} from './tokenizer'
 const context = github_context
 const repo = context.repo
 
-const ignoreKeyword = '@razorgenius: ignore'
+const ignoreKeyword = '@contentstackgenius: ignore'
 
 export const codeReview = async (
   lightBot: Bot,
@@ -430,7 +430,7 @@ ${filename}: ${summary}
     if (releaseNotesResponse === '') {
       info('release notes: nothing obtained from openai')
     } else {
-      let message = '### Summary by CodeRabbit\n\n'
+      let message = '### Summary by ContentStackGenius\n\n'
       message += releaseNotesResponse
       try {
         await commenter.updateDescription(
@@ -715,7 +715,7 @@ ${
 <summary>Tips</summary>
 
 ### Pausing incremental reviews
-- Add \`@razorgenius: ignore\` anywhere in the PR description to pause further reviews from the bot.
+- Add \`@contentstackgenius: ignore\` anywhere in the PR description to pause further reviews from the bot.
 
 </details>
 `

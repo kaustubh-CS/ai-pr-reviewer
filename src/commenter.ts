@@ -6,7 +6,7 @@ import {octokit} from './octokit'
 // eslint-disable-next-line camelcase
 const context = github_context
 const repo = context.repo
-const botName = 'RazorGenius'
+const botName = 'ContentStackGenius'
 
 export const COMMENT_GREETING = `${getInput('bot_icon')}   ${botName}`
 
